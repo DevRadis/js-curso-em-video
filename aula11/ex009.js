@@ -1,7 +1,12 @@
-var país = 'Brasil'
-console.log(`Vivendo em ${país}.`)
-if (país == 'Brasil') { // Pode ser usado o sinal de != (Não igual)
-  console.log('Você é Brasileiro!')
+function calcular() {
+  var txtp = window.document.querySelector('input#txtpais')
+  var pais = (txtp.value).toLowerCase()
+  var paisCapitalized = pais[0].toUpperCase() + pais.substr(1)
+  var res = window.document.querySelector('div#res')
+  res.innerHTML = `<p>Seu País atual é ${paisCapitalized}</p>`
+if (pais === 'brasil') {
+    res.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`
 } else {
-  console.log('Você é estrangeiro')
+    res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>!</p>`
+  }
 }
