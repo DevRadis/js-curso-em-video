@@ -7,7 +7,7 @@ function tabuada() {
   } else {
     let n = Number(num.value)
     let c = 1
-    tab.innerHTML = '' // colocar para limpar a tabuada quando digitar uma
+    tab.innerHTML = ' ' // colocar para limpar a tabuada quando digitar uma
     while (c <= 10) {
       let item = window.document.createElement('option')
       item.text = `${n} x ${c} = ${n*c}`
